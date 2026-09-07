@@ -1,56 +1,240 @@
-# 📌 AI-Powered Content Generator
+# 🤖 Creator AI – AI-Powered Content Generator
 
-## 🚀 Project Overview
-**Creator AI** is an AI-powered content generation application built using **Next.js, React, TailwindCSS, Drizzle ORM, TypeScript, and Clerk for authentication**. It leverages **Google Gemini API** to generate high-quality content efficiently. The app provides a seamless user experience with a **modern UI, secure authentication, and a scalable Postgres database** for content storage.
+**Creator AI** is an AI-powered content generation platform built to help users create high-quality content quickly and efficiently using Google's **Gemini AI**.
 
-## ✨ Features
-- **AI-Powered Content Generation**: Utilizes **Google Gemini API** for generating high-quality content.
-- **Authentication & Security**: Implemented **Clerk authentication** for secure access.
-- **Modern UI/UX**: Designed using **TailwindCSS** for a sleek and responsive interface.
-- **Database Management**: Uses **Postgres** with **Drizzle ORM** for structured data handling.
-- **Scalability & Performance**: Optimized backend with **TypeScript** and **Next.js Server Components**.
-- **Cloud Deployment**: Deployed on **Vercel** for seamless global accessibility.
+The application provides a modern and responsive interface with secure authentication, AI-powered content generation, content history, usage tracking, subscription management, and database integration.
+
+---
+
+## 🚀 Features
+
+* 🤖 **AI-Powered Content Generation**
+
+  * Generate high-quality content using the Google Gemini API.
+  * Multiple content-generation templates for different use cases.
+
+* 🔐 **Secure Authentication**
+
+  * User authentication and account management powered by Clerk.
+  * Protected dashboard and user-specific features.
+
+* 📝 **Content Templates**
+
+  * Predefined templates to make content creation faster and easier.
+  * Search and select templates based on your requirements.
+
+* 📚 **Content History**
+
+  * View previously generated content.
+  * Easily copy generated content for further use.
+
+* 📊 **Usage Tracking**
+
+  * Track AI credit usage.
+  * Monitor content-generation limits.
+
+* 💳 **Subscription & Billing**
+
+  * Subscription management and credit-based usage system.
+  * Integrated payment functionality.
+
+* 🎨 **Modern & Responsive UI**
+
+  * Clean dashboard interface.
+  * Responsive design using Tailwind CSS.
+
+* 🗄️ **Database Integration**
+
+  * PostgreSQL database for storing application and user data.
+  * Drizzle ORM for database management.
+
+---
 
 ## 🛠️ Tech Stack
-- **Frontend**: Next.js, React, TailwindCSS
-- **Backend**: Next.js API routes, Drizzle ORM
-- **Database**: PostgreSQL
-- **Authentication**: Clerk
-- **AI Model**: Google Gemini API
-- **Hosting**: Vercel
 
-## 📊 Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/creator-ai.git
-   cd creator-ai
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Set up environment variables in a `.env.local` file:
-   ```sh
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-   CLERK_SECRET_KEY=your_clerk_secret
-   DATABASE_URL=your_postgres_url
-   GEMINI_API_KEY=your_gemini_api_key
-   ```
-4. Run the development server:
-   ```sh
-   npm run dev
-   ```
-5. Open **http://localhost:3000** to access the app.
+| Technology            | Usage                            |
+| --------------------- | -------------------------------- |
+| **Next.js**           | Full-stack React framework       |
+| **React.js**          | Frontend UI                      |
+| **TypeScript**        | Type-safe development            |
+| **Tailwind CSS**      | Styling and responsive UI        |
+| **Clerk**             | Authentication & user management |
+| **Google Gemini API** | AI content generation            |
+| **PostgreSQL**        | Database                         |
+| **Drizzle ORM**       | Database ORM                     |
+| **Vercel**            | Deployment                       |
 
-## 🏆 Future Enhancements
-- **Integration with additional AI models** for better content customization.
-- **User-generated templates** for faster content creation.
-- **Advanced analytics dashboard** to track AI-generated content performance.
-- **Collaboration features** for team-based content creation.
+---
 
-## 📜 License
-This project is licensed under the **MIT License**.
+## 📂 Project Structure
+
+```text
+Creator-AI/
+│
+├── app/
+│   ├── (auth)/
+│   ├── (context)/
+│   ├── (data)/
+│   ├── api/
+│   ├── dashboard/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   └── ui/
+│
+├── lib/
+│
+├── utils/
+│   ├── AiModal.tsx
+│   ├── db.tsx
+│   └── schema.tsx
+│
+├── middleware.ts
+├── drizzle.config.js
+├── next.config.mjs
+├── package.json
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ankitkgupta11-g/AI-Powered-Content-Generator-.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd AI-Powered-Content-Generator-
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+DATABASE_URL=your_postgresql_database_url
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+> ⚠️ **Never commit your `.env.local` file or expose your API keys publicly.**
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 🔄 How It Works
+
+```text
+User
+  ↓
+Select Content Template
+  ↓
+Enter Required Information
+  ↓
+Send Prompt
+  ↓
+Google Gemini API
+  ↓
+AI Generated Content
+  ↓
+Display & Save Content
+```
+
+---
+
+## 🌐 Live Demo
+
+Add your deployed Vercel URL here:
+
+**Live Demo:** [Creator AI](YOUR_VERCEL_URL)
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the application can be added here to showcase the dashboard, content generation interface, authentication pages, and generated content.
+
+---
+
+## 🔮 Future Enhancements
+
+* Support for additional AI models
+* More content-generation templates
+* Advanced content analytics
+* AI-powered content suggestions
+* Team collaboration features
+* Improved content customization
+* Export generated content to different formats
+* Enhanced subscription plans
+
+---
 
 ## 🤝 Contributing
-Want to contribute? Feel free to open an **issue** or submit a **pull request**.
 
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch.
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Make your changes.
+4. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+5. Push the branch.
+
+```bash
+git push origin feature/your-feature
+```
+
+6. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Ankit Gupta**
+
+GitHub: [@ankitkgupta11-g](https://github.com/ankitkgupta11-g)
+
+---
+
+⭐ If you found this project useful, consider giving it a **star** on GitHub!
