@@ -1,5 +1,5 @@
 "use client"
-import { FileClock, Home, Settings, WalletCards } from 'lucide-react'
+import { FileClock, Home, Settings } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -18,11 +18,6 @@ function SideNav() {
             name:'History',
             icon:FileClock,
             path:'/dashboard/history'
-        },
-        {
-            name:'Billing',
-            icon:WalletCards,
-            path:'/dashboard/billing'
         },
         {
             name:'Setting',
