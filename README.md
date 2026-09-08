@@ -1,16 +1,20 @@
 # 🤖 Creator AI – AI-Powered Content Generator
 
-Creator AI is an AI-powered content generation platform that helps users create high-quality content quickly and efficiently using Google's Gemini API.
+**Creator AI** is an AI-powered content generation platform that helps users create high-quality content quickly and efficiently using **Google Gemini AI**.
 
-The application provides a modern and responsive interface with secure user authentication, multiple content templates, content history, usage tracking, subscription management, and database integration.
+It provides a modern, responsive, and user-friendly interface with features such as AI content generation, multiple content templates, secure authentication, content history, usage tracking, subscription management, and database integration.
+
+## 🌐 Live Demo
+
+🚀 **Live Project:** https://content-generator-liard.vercel.app/
 
 ## ✨ Features
 
 * 🤖 **AI-Powered Content Generation**
   Generate high-quality content using the Google Gemini API.
 
-* 📝 **Content Templates**
-  Choose from predefined templates for different content-generation needs.
+* 📝 **Multiple Content Templates**
+  Choose from predefined templates for different content-generation requirements.
 
 * 🔐 **Secure Authentication**
   User authentication and account management powered by Clerk.
@@ -28,7 +32,7 @@ The application provides a modern and responsive interface with secure user auth
   Manage subscriptions and credit-based usage.
 
 * 🎨 **Modern & Responsive UI**
-  Clean and responsive user interface built with Tailwind CSS.
+  Clean, responsive, and user-friendly interface built with Tailwind CSS.
 
 * 🗄️ **Database Integration**
   PostgreSQL database integration using Drizzle ORM.
@@ -110,7 +114,7 @@ DATABASE_URL=your_postgresql_database_url
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-If Razorpay is configured in your project, add the required Razorpay environment variables as well.
+If Razorpay is configured in the project, add the required Razorpay environment variables as well.
 
 > ⚠️ **Important:** Never commit `.env.local`, API keys, secret keys, passwords, or other sensitive credentials to GitHub.
 
@@ -144,20 +148,35 @@ AI Generated Content
 Display / Copy / Save Content
 ```
 
+## 🚀 Deployment
+
+The project is deployed using **Vercel**.
+
+🔗 **Live Application:**
+https://content-generator-liard.vercel.app/
+
+To deploy your own version:
+
+1. Fork or clone this repository.
+2. Push the project to GitHub.
+3. Import the repository into Vercel.
+4. Configure the required environment variables.
+5. Deploy the application.
+
 ## 🔮 Future Enhancements
 
-* Support for additional AI models
-* More content-generation templates
-* Advanced content analytics
-* AI-powered content suggestions
-* Team collaboration features
-* Improved content customization
-* Export generated content in different formats
-* Enhanced subscription plans
+* 🤖 Support for additional AI models
+* 📝 More content-generation templates
+* 📊 Advanced content analytics
+* 💡 AI-powered content suggestions
+* 👥 Team collaboration features
+* 🎯 Improved content customization
+* 📄 Export generated content in different formats
+* 💳 Enhanced subscription plans
 
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome and appreciated.
 
 1. Fork the repository.
 2. Create a new branch.
@@ -174,7 +193,7 @@ This project is licensed under the **MIT License**.
 
 **Ankit Gupta**
 
-GitHub: [@ankitkgupta11-g](https://github.com/ankitkgupta11-g)
+🔗 **GitHub:** [@ankitkgupta11-g](https://github.com/ankitkgupta11-g)
 
 ---
 
